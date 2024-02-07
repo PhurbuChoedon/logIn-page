@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+ul {
+	list-style-type: number;
+}
+
+.form-control.error input {
+	border-color: #e75c3c;
+}
+
+.ellipse-bg {
+	background: linear-gradient(180deg, #642eff 53.54%, #4c0783 100%);
+	clip-path: ellipse(68% 40% at 54% 12%);
+}
+.heading-wrapper {
+	background-image: url("/bgImg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 20%,
+		100% 80%,
+		100% 100%,
+		20% 100%,
+		0% 80%,
+		0% 20%
+	);
+}
+
+.carete-wrapper {
+	clip-path: polygon(
+		0 0,
+		80% 0,
+		100% 20%,
+		100% 80%,
+		100% 99%,
+		0 99%,
+		0% 80%,
+		0% 20%
+	);
+}
+
+/* -----------------media query------------ */
+@media screen and (max-width: 768px) {
+	.ellipse-bg {
+		clip-path: ellipse(59% 10% at 50% 100%);
+	}
+	.heading-wrapper {
+		clip-path: unset;
+	}
+	.carete-wrapper {
+		clip-path: unset;
+	}
+}

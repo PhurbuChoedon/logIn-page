@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="./dist/output.css" rel="stylesheet">
+  <title>Log in</title>
+</head>
+
+<body>
+  <div class="main md:h-screen flex justify-center items-center pb-[100px] md:pb-[0] relative">
+    <div class="ellipse-bg absolute w-full h-screen z-0 bottom-0 md:top-0">
+    </div>
+    <div class="flex md:max-w-[761px] w-full z-10 flex-wrap md:flex-nowrap">
+      <div class="pt-[67px] pb-[56px] md:py-[100px] px-[50px] md:w-[47%] w-full heading-wrapper">
+        <h4 class="text-[34px] font-bold text-white">Sample heading</h4>
+        <div>
+          <ul class="pl-5  md:max-w-[260px] w-full">
+            <li class="mb-2 text-white">
+              Lorem ipsum dolor sit amet consectetur
+            </li>
+            <li class="mb-2 text-white">
+              Adipisicing elit tempore dolorem
+            </li>
+            <li class="mb-2 text-white">
+              Laborum distinctio incidunt quae voluptas tempore dolorems
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="py-10 px-[54px] md:w-[53%] w-full bg-white carete-wrapper">
+        <h5 class="text-2xl font-medium mb-[30px]">Create an account</h5>
+        <form class="form">
+          <div class="mb-[30px] relative form-control">
+            <label for="email" class="mb-1 inline-block text-base font-bold">
+              Enter your email
+            </label>
+            <input class="h-[42px] w-full rounded border-2 border-solid border-[#BDBDBD] px-2" id="email" type="email">
+            <p id="emailError" class="text-[#ff0000] absolute bottom-[-18px] text-xs"></p>
+          </div>
+          <div class="mb-[30px] relative">
+            <p class="mb-1 text-base font-bold">Date of birth <span class="font-bold text-xs">(Optional)</span></p>
+            <div class="flex mb-1">
+              <div class="form-control w-[23%] mr-2">
+                <label for="day" class="text-sm mb-1 text-[#666666]">Day</label>
+                <input type="text" class="h-[42px] w-full rounded border-2 border-solid border-[#BDBDBD] px-2" id="day">
+                <p id="dayError" class="text-[#ff0000] absolute bottom-[-18px] text-xs"></p>
+              </div>
+              <div class="w-[40%] mr-2">
+                <span class="text-sm mb-1 text-[#666666]">Month</span>
+                <div>
+                  <select class="h-[42px] w-full rounded border-2 border-solid border-[#BDBDBD]">
+                    <option class="py-2" value="0"></option>
+                    <option class="p-2" value="1">January</option>
+                    <option class="p-2" value="2">February</option>
+                    <option class="p-2" value="3">March</option>
+                    <option class="p-2" value="4">April</option>
+                    <option class="p-2" value="5">May</option>
+                    <option class="p-2" value="6">June</option>
+                    <option class="p-2" value="7">July</option>
+                    <option class="p-2" value="8">August</option>
+                    <option class="p-2" value="9">September</option>
+                    <option class="p-2" value="10">October</option>
+                    <option class="p-2" value="11">November</option>
+                    <option class="p-2" value="12">Decembe</option>
+                  </select>
+                </div>
+              </div>
+              <div class="w-[33%]">
+                <span class="text-sm mb-1 text-[#666666]">Year</span>
+                <div>
+                  <select class="h-[42px] w-full rounded border-2 border-solid border-[#BDBDBD]">
+                    <option class="py-2" value="0"></option>
+                    <option class="p-2" value="1">2024</option>
+                    <option class="p-2" value="2">2023</option>
+                    <option class="p-2" value="3">2022</option>
+                    <option class="p-2" value="4">2021</option>
+                    <option class="p-2" value="5">2020</option>
+                    <option class="p-2" value="6">2019</option>
+                    <option class="p-2" value="7">2018</option>
+                    <option class="p-2" value="8">2017</option>
+                    <option class="p-2" value="9">2017</option>
+                    <option class="p-2" value="10">2016</option>
+                    <option class="p-2" value="11">2015</option>
+                    <option class="p-2" value="12">2014</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-[30px] relative form-control">
+            <label for="password" class="mb-1 inline-block text-base font-bold">
+              Choose a strong password
+            </label>
+            <input class="h-[42px] w-full rounded border-2 border-solid border-[#BDBDBD] px-2" id="password"
+              type="password">
+            <p id="passwordError" class="text-[#ff0000] absolute bottom-[-18px] text-xs"></p>
+          </div>
+          <div class="mb-[30px]">
+            <span class="mb-1 inline-block text-base font-bold">
+              Are you an agency or individual?
+            </span>
+            <div class="flex">
+              <div class="flex items-center mr-[30px]">
+                <input class="w-[19px] h-[19px] mr-[7px]" type="radio" name="season" id="individual" value="Individual">
+                <span class="text-sm">Individual</span>
+              </div>
+              <div class="flex items-center">
+                <input class="w-[19px] h-[19px] mr-[7px]" type="radio" name="season" id="agency" value="Agency"> <span
+                  class="text-sm">Agency</span>
+              </div>
+            </div>
+          </div>
+          <button class="w-[188px] bg-[#2D9CDB] py-2 text-[#ffffff] rounded text-lg font-medium"
+            type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
